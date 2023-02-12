@@ -23,7 +23,7 @@ services:
       - kpd_public_network
       - kpd_internal_network
   postgres:
-    image: postgres:13-alpine
+    image: postgres:12
     container_name: postgres
     env_file:
       - ./.env
