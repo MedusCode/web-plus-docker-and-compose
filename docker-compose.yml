@@ -22,6 +22,7 @@ services:
     networks:
       - kpd_internal_network
       - kpd_public_network
+    restart: unless-stopped
   postgres:
     image: postgres:13
     container_name: postgres
